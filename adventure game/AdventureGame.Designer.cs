@@ -38,13 +38,15 @@
             this.blueLabel = new System.Windows.Forms.Label();
             this.greenLabel = new System.Windows.Forms.Label();
             this.BackgroundLabel = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.imageBox = new System.Windows.Forms.PictureBox();
             this.yellowLabel = new System.Windows.Forms.Label();
+            this.coinBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.redButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yellowButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.greenButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.blueButton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coinBox)).BeginInit();
             this.SuspendLayout();
             // 
             // outputLabel
@@ -141,14 +143,14 @@
             this.BackgroundLabel.TabIndex = 9;
             this.BackgroundLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pictureBox1
+            // imageBox
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Black;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 104);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(430, 206);
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
+            this.imageBox.BackColor = System.Drawing.Color.Black;
+            this.imageBox.Location = new System.Drawing.Point(12, 104);
+            this.imageBox.Name = "imageBox";
+            this.imageBox.Size = new System.Drawing.Size(430, 206);
+            this.imageBox.TabIndex = 10;
+            this.imageBox.TabStop = false;
             // 
             // yellowLabel
             // 
@@ -162,6 +164,17 @@
             this.yellowLabel.Text = "label2";
             this.yellowLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // coinBox
+            // 
+            this.coinBox.BackColor = System.Drawing.Color.Transparent;
+            this.coinBox.BackgroundImage = global::adventure_game.Properties.Resources.unnamed;
+            this.coinBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.coinBox.Location = new System.Drawing.Point(12, 253);
+            this.coinBox.Name = "coinBox";
+            this.coinBox.Size = new System.Drawing.Size(65, 57);
+            this.coinBox.TabIndex = 12;
+            this.coinBox.TabStop = false;
+            // 
             // AdventureGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -169,7 +182,6 @@
             this.BackColor = System.Drawing.Color.Purple;
             this.ClientSize = new System.Drawing.Size(454, 450);
             this.Controls.Add(this.yellowLabel);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.greenLabel);
             this.Controls.Add(this.blueLabel);
             this.Controls.Add(this.redLabel);
@@ -178,6 +190,8 @@
             this.Controls.Add(this.yellowButton);
             this.Controls.Add(this.redButton);
             this.Controls.Add(this.outputLabel);
+            this.Controls.Add(this.coinBox);
+            this.Controls.Add(this.imageBox);
             this.Controls.Add(this.BackgroundLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AdventureGame";
@@ -187,7 +201,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.yellowButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.greenButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.blueButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coinBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -203,8 +218,9 @@
         private System.Windows.Forms.Label blueLabel;
         private System.Windows.Forms.Label greenLabel;
         private System.Windows.Forms.Label BackgroundLabel;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox imageBox;
         private System.Windows.Forms.Label yellowLabel;
+        private System.Windows.Forms.PictureBox coinBox;
     }
 }
 
