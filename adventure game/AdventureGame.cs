@@ -35,6 +35,7 @@ namespace adventure_game
             InitializeComponent();
 
             coinBox.Parent = backgroundLabel;
+            coinBox.Visible = false;
             //display initial message and options
             outputLabel.Text = "\n Welcome to Adventure Time. \nGood luck!";
             blueScene = 100;
@@ -306,6 +307,7 @@ namespace adventure_game
                     break;
                 case 15:
                     outputLabel.Text = "There is a blinding flash of white light. When you are able to see again, you are in your own bedroom.\n\nCongratulations on completing Adventure Time!\nThanks for playing!";
+                    coinBox.Visible = false;
                     redLabel.Text = "Continue";
                     blueLabel.Text = "";
                     yellowLabel.Text = "";
@@ -320,6 +322,7 @@ namespace adventure_game
                     {
                         outputLabel.Text = "You find a gold coin under the loose floorboard. You take the coin.\nWhat do you investigate next?";
                         goldCoin = 1;
+                        coinBox.Visible = true;
                         redLabel.Text = "Fireplace Aquarium";
                         blueLabel.Text = "Hovering Lamp";
                         yellowLabel.Text = "";

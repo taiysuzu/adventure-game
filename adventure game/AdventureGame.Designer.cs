@@ -170,9 +170,9 @@
             this.coinBox.BackColor = System.Drawing.Color.Transparent;
             this.coinBox.BackgroundImage = global::adventure_game.Properties.Resources.unnamed;
             this.coinBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.coinBox.Location = new System.Drawing.Point(12, 253);
+            this.coinBox.Location = new System.Drawing.Point(16, 104);
             this.coinBox.Name = "coinBox";
-            this.coinBox.Size = new System.Drawing.Size(65, 57);
+            this.coinBox.Size = new System.Drawing.Size(61, 42);
             this.coinBox.TabIndex = 12;
             this.coinBox.TabStop = false;
             // 
