@@ -34,6 +34,7 @@ namespace adventure_game
         {
             InitializeComponent();
 
+            coinBox.Parent = backgroundLabel;
             //display initial message and options
             outputLabel.Text = "\n Welcome to Adventure Time. \nGood luck!";
             blueScene = 100;

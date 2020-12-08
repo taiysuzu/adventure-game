@@ -37,7 +37,7 @@
             this.redLabel = new System.Windows.Forms.Label();
             this.blueLabel = new System.Windows.Forms.Label();
             this.greenLabel = new System.Windows.Forms.Label();
-            this.BackgroundLabel = new System.Windows.Forms.Label();
+            this.backgroundLabel = new System.Windows.Forms.Label();
             this.imageBox = new System.Windows.Forms.PictureBox();
             this.yellowLabel = new System.Windows.Forms.Label();
             this.coinBox = new System.Windows.Forms.PictureBox();
@@ -53,9 +53,9 @@
             // 
             this.outputLabel.BackColor = System.Drawing.Color.Black;
             this.outputLabel.ForeColor = System.Drawing.Color.White;
-            this.outputLabel.Location = new System.Drawing.Point(12, 22);
+            this.outputLabel.Location = new System.Drawing.Point(13, 22);
             this.outputLabel.Name = "outputLabel";
-            this.outputLabel.Size = new System.Drawing.Size(430, 79);
+            this.outputLabel.Size = new System.Drawing.Size(428, 79);
             this.outputLabel.TabIndex = 0;
             this.outputLabel.Text = "label1";
             this.outputLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -132,23 +132,24 @@
             this.greenLabel.Text = "label4";
             this.greenLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // BackgroundLabel
+            // backgroundLabel
             // 
-            this.BackgroundLabel.BackColor = System.Drawing.Color.Black;
-            this.BackgroundLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BackgroundLabel.ForeColor = System.Drawing.Color.White;
-            this.BackgroundLabel.Location = new System.Drawing.Point(12, 9);
-            this.BackgroundLabel.Name = "BackgroundLabel";
-            this.BackgroundLabel.Size = new System.Drawing.Size(430, 301);
-            this.BackgroundLabel.TabIndex = 9;
-            this.BackgroundLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.backgroundLabel.BackColor = System.Drawing.Color.Black;
+            this.backgroundLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.backgroundLabel.ForeColor = System.Drawing.Color.White;
+            this.backgroundLabel.Location = new System.Drawing.Point(12, 9);
+            this.backgroundLabel.Name = "backgroundLabel";
+            this.backgroundLabel.Size = new System.Drawing.Size(430, 301);
+            this.backgroundLabel.TabIndex = 9;
+            this.backgroundLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // imageBox
             // 
             this.imageBox.BackColor = System.Drawing.Color.Black;
-            this.imageBox.Location = new System.Drawing.Point(12, 104);
+            this.imageBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.imageBox.Location = new System.Drawing.Point(83, 104);
             this.imageBox.Name = "imageBox";
-            this.imageBox.Size = new System.Drawing.Size(430, 206);
+            this.imageBox.Size = new System.Drawing.Size(288, 168);
             this.imageBox.TabIndex = 10;
             this.imageBox.TabStop = false;
             // 
@@ -181,6 +182,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Purple;
             this.ClientSize = new System.Drawing.Size(454, 450);
+            this.Controls.Add(this.coinBox);
             this.Controls.Add(this.yellowLabel);
             this.Controls.Add(this.greenLabel);
             this.Controls.Add(this.blueLabel);
@@ -190,9 +192,8 @@
             this.Controls.Add(this.yellowButton);
             this.Controls.Add(this.redButton);
             this.Controls.Add(this.outputLabel);
-            this.Controls.Add(this.coinBox);
             this.Controls.Add(this.imageBox);
-            this.Controls.Add(this.BackgroundLabel);
+            this.Controls.Add(this.backgroundLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AdventureGame";
             this.Text = "Adventure Time";
@@ -217,7 +218,7 @@
         private System.Windows.Forms.Label redLabel;
         private System.Windows.Forms.Label blueLabel;
         private System.Windows.Forms.Label greenLabel;
-        private System.Windows.Forms.Label BackgroundLabel;
+        private System.Windows.Forms.Label backgroundLabel;
         private System.Windows.Forms.PictureBox imageBox;
         private System.Windows.Forms.Label yellowLabel;
         private System.Windows.Forms.PictureBox coinBox;
