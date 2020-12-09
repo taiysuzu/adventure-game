@@ -146,6 +146,7 @@
             // imageBox
             // 
             this.imageBox.BackColor = System.Drawing.Color.Black;
+            this.imageBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.imageBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.imageBox.Location = new System.Drawing.Point(83, 104);
             this.imageBox.Name = "imageBox";
@@ -168,7 +169,7 @@
             // coinBox
             // 
             this.coinBox.BackColor = System.Drawing.Color.Transparent;
-            this.coinBox.BackgroundImage = global::adventure_game.Properties.Resources.unnamed;
+            this.coinBox.BackgroundImage = global::adventure_game.Properties.Resources.coin;
             this.coinBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.coinBox.Location = new System.Drawing.Point(16, 104);
             this.coinBox.Name = "coinBox";

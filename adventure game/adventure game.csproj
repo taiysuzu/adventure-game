@@ -104,5 +104,32 @@
   <ItemGroup>
     <None Include="Resources\unnamed.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bedroom.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hallway.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hallway-figures.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ded.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rip1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\floorboard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\floatlamp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yourroom.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

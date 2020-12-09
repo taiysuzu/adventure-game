@@ -17,7 +17,7 @@ namespace adventure_game
 {
     public partial class AdventureGame : Form
     {
-        // tracks what part of the game the user is at
+        // variables
         int scene = 0;
         int redScene = 0;
         int blueScene = 0;
@@ -26,17 +26,15 @@ namespace adventure_game
         int doorSlam = 0;
         int goldCoin = 0;
         int number = 0;
+        //random number generator
         Random randGen = new Random();
-
-        // random number generator
 
         public AdventureGame()
         {
             InitializeComponent();
-
+            //startup view
             coinBox.Parent = backgroundLabel;
             coinBox.Visible = false;
-            //display initial message and options
             outputLabel.Text = "\n Welcome to Adventure Time. \nGood luck!";
             blueScene = 100;
             yellowScene = 99;
@@ -89,14 +87,15 @@ namespace adventure_game
             switch (scene)
             {
                 case 0:  //start scene  
-                    outputLabel.Text = "You wake up in an unfamiliar bedroom.\nWhat do you want to do?";
-                    redLabel.Text = "Go back to sleep";
+                    outputLabel.Text = "You wake up in an unfamiliar bedroom.\nWhat do you want to do?"; //output text story
+                    redLabel.Text = "Go back to sleep"; //options on buttons
                     blueLabel.Text = "Go into the Hall";
                     yellowLabel.Text = "Take a look around";
-                    redScene = 0;
+                    redScene = 0;//changes which scene each buttons takes you to
                     blueScene = 1;
                     yellowScene = 2;
                     greenScene = 99;
+                    imageBox.BackgroundImage = Properties.Resources.bedroom; //change image
                     break;
                 case 1:
                     outputLabel.Text = "You walk into the hallway and find yourself bathed in an eerie blue light.\nWhat do you want to do?";
@@ -108,6 +107,7 @@ namespace adventure_game
                     blueScene = 4;
                     yellowScene = 99;
                     greenScene = 99;
+                    imageBox.BackgroundImage = Properties.Resources.hallway;
                     break;
                 case 2:
                     outputLabel.Text = "As you begin to look around the room, you notice some strange things.\nWhat do you investigate first?";
@@ -119,6 +119,7 @@ namespace adventure_game
                     blueScene = 8;
                     yellowScene = 9;
                     greenScene = 99;
+                    imageBox.BackgroundImage = Properties.Resources.bedroom;
                     break;
                 case 3:
                     outputLabel.Text = "You look around, but you can't seem to find the source of the light. You notice some shadowy figures approaching from one end of the hallway.\nDo you stand your ground or run?";
@@ -130,6 +131,7 @@ namespace adventure_game
                     blueScene = 19;
                     yellowScene = 99;
                     greenScene = 99;
+                    imageBox.BackgroundImage = Properties.Resources.hallway_figures;
                     break;
                 case 4:
                     outputLabel.Text = "You run back to the room you came out of and slam the door behind you.\n(Continue)";
@@ -142,6 +144,7 @@ namespace adventure_game
                     blueScene = 99;
                     yellowScene = 99;
                     greenScene = 99;
+                    imageBox.BackgroundImage = Properties.Resources.bedroom;
                     break;
                 case 5:
                     outputLabel.Text = "You decide to stand your ground. The figures look less and less solid as they approach. In a few seconds, you are enveloped by the shadows and lose consciousness.\n(Continue)";
@@ -153,6 +156,7 @@ namespace adventure_game
                     blueScene = 99;
                     yellowScene = 99;
                     greenScene = 99;
+                    imageBox.BackgroundImage = Properties.Resources.hallway_figures;
                     break;
                 case 6:
                     outputLabel.Text = "You run as fast as you can down the hall, but in your haste you tigger a tripwire and fall into a spike pit.";
@@ -164,6 +168,7 @@ namespace adventure_game
                     blueScene = 99;
                     yellowScene = 99;
                     greenScene = 99;
+                    imageBox.BackgroundImage = Properties.Resources.rip1;
                     break;
                 case 7:
                     outputLabel.Text = "You examine the lamp, which seems to be floating of its own accord.\nPlug the lamp in?";
@@ -175,6 +180,7 @@ namespace adventure_game
                     blueScene = 11;
                     yellowScene = 99;
                     greenScene = 99;
+                    imageBox.BackgroundImage = Properties.Resources.floatlamp;
                     break;
                 case 8:
                     outputLabel.Text = "You go over to the fireplace, which has been crudely renovated into an aquarium. You spend some time looking at the fish, and you notice a tub of fish food beside the aquarium.\nDo you feed the fish?";
@@ -223,6 +229,7 @@ namespace adventure_game
                     blueLabel.Text = "No";
                     yellowLabel.Text = "";
                     greenLabel.Text = "";
+                    imageBox.BackgroundImage = Properties.Resources.floorboard;
                     number = randGen.Next(1, 6);
                     if (doorSlam == 1)
                     {
@@ -260,6 +267,7 @@ namespace adventure_game
                     blueScene = 99;
                     yellowScene = 99;
                     greenScene = 99;
+                    imageBox.BackgroundImage = Properties.Resources.rip1;
                     break;
                 case 11:
                     outputLabel.Text = "You decide to leave the lamp as it is.\nWhat do you investigate next?";
@@ -271,6 +279,7 @@ namespace adventure_game
                     blueScene = 8;
                     yellowScene = 99;
                     greenScene = 99;
+                    imageBox.BackgroundImage = Properties.Resources.bedroom;
                     break;
                 case 12:
                     outputLabel.Text = "The fish start to thrash about as you sprinkle the food in. You put your hand too close and get bitten, at which you realize they're piranhas. They smell blood and all start to attack you. You get dragged under and devoured.";
@@ -282,6 +291,7 @@ namespace adventure_game
                     blueScene = 99;
                     yellowScene = 99;
                     greenScene = 99;
+                    imageBox.BackgroundImage = Properties.Resources.rip1;
                     break;
                 case 13:
                     outputLabel.Text = "The room begins to close like the trash compactor from Star Wars.\nWhat do you do?";
@@ -293,6 +303,7 @@ namespace adventure_game
                     blueScene = 14;
                     yellowScene = 15;
                     greenScene = 99;
+                    imageBox.BackgroundImage = Properties.Resources.bedroom;
                     break;
                 case 14:
                     outputLabel.Text = "You are squished.";
@@ -304,6 +315,7 @@ namespace adventure_game
                     blueScene = 99;
                     yellowScene = 99;
                     greenScene = 99;
+                    imageBox.BackgroundImage = Properties.Resources.rip1;
                     break;
                 case 15:
                     outputLabel.Text = "There is a blinding flash of white light. When you are able to see again, you are in your own bedroom.\n\nCongratulations on completing Adventure Time!\nThanks for playing!";
@@ -316,6 +328,7 @@ namespace adventure_game
                     blueScene = 99;
                     yellowScene = 99;
                     greenScene = 99;
+                    imageBox.BackgroundImage = Properties.Resources.yourroom;
                     break;
                 case 16:
                     if (goldCoin == 0)
@@ -331,6 +344,7 @@ namespace adventure_game
                         blueScene = 7;
                         yellowScene = 99;
                         greenScene = 99;
+                        imageBox.BackgroundImage = Properties.Resources.floorboard;
                     }
                     else
                     {
@@ -343,6 +357,7 @@ namespace adventure_game
                         blueScene = 7;
                         yellowScene = 99;
                         greenScene = 99;
+                        imageBox.BackgroundImage = Properties.Resources.floorboard;
                     }
                     break;
                 case 17:
@@ -355,6 +370,7 @@ namespace adventure_game
                     blueScene = 99;
                     yellowScene = 99;
                     greenScene = 99;
+                    imageBox.BackgroundImage = Properties.Resources.rip1;
                     break;
                 case 18:
                     outputLabel.Text = "Game over.\nPlay again?";
@@ -377,6 +393,7 @@ namespace adventure_game
                     blueScene = 6;
                     yellowScene = 99;
                     greenScene = 99;
+                    imageBox.BackgroundImage = Properties.Resources.hallway_figures;
                     break;
                 case 20:
                     outputLabel.Text = "You don't feed the fish. You remember your mom telling you about throwing a coin into a well and making a wish. The aquarium's not quite a well, but oh well... \nDo you make a wish and toss the coin into the water?";
@@ -443,6 +460,7 @@ namespace adventure_game
                     blueScene = 8;
                     yellowScene = 99;
                     greenScene = 99;
+                    imageBox.BackgroundImage = Properties.Resources.bedroom;
                     break;
                 default:
                     break;
