@@ -1,5 +1,5 @@
 ﻿/// created by : Taiyo Suzuki
-/// date       : 8/12/2020
+/// date       : 9/12/2020
 /// description: A basic text adventure game engine
 
 using System;
@@ -38,7 +38,7 @@ namespace adventure_game
         {
             InitializeComponent();
             //startup view
-            coinBox.Parent = backgroundLabel;
+            coinBox.Parent = imageBox;
             coinBox.Visible = false;
             outputLabel.Text = "\n Welcome to Adventure Time. \nGood luck!";
             blueScene = 100;
@@ -400,6 +400,7 @@ namespace adventure_game
                     imageBox.BackgroundImage = Properties.Resources.gameover;
                     doorSlam = 0; //reset variables controlled ingame
                     goldCoin = 0;
+                    coinBox.Visible = false;
                     break;
                 case 19:
                     outputLabel.Text = "You decide to run.\nRun where?";
