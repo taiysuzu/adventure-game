@@ -52,6 +52,7 @@
             // outputLabel
             // 
             this.outputLabel.BackColor = System.Drawing.Color.Black;
+            this.outputLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.outputLabel.ForeColor = System.Drawing.Color.White;
             this.outputLabel.Location = new System.Drawing.Point(13, 22);
             this.outputLabel.Name = "outputLabel";

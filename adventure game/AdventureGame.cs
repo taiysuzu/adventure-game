@@ -43,6 +43,7 @@ namespace adventure_game
             blueLabel.Text = "Exit";
             yellowLabel.Text = "";
             greenLabel.Text = "";
+            imageBox.BackgroundImage = Properties.Resources.atime;
 
         }
 
@@ -188,6 +189,7 @@ namespace adventure_game
                     blueLabel.Text = "No";
                     yellowLabel.Text = "";
                     greenLabel.Text = "";
+                    imageBox.BackgroundImage = Properties.Resources.fishtank;
                     if (doorSlam == 1)
                     {
                         if (goldCoin == 1)
@@ -382,6 +384,9 @@ namespace adventure_game
                     blueScene = 100;
                     yellowScene = 99;
                     greenScene = 99;
+                    imageBox.BackgroundImage = Properties.Resources.gameover;
+                    doorSlam = 0; //reset variables controlled ingame
+                    goldCoin = 0;
                     break;
                 case 19:
                     outputLabel.Text = "You decide to run.\nRun where?";
@@ -405,6 +410,7 @@ namespace adventure_game
                     blueScene = 13;
                     yellowScene = 99;
                     greenScene = 99;
+                    imageBox.BackgroundImage = Properties.Resources.fishtank;
                     break;
                 case 21:
                     outputLabel.Text = "You don't feed the fish.\nWhat do you investigate next?";
@@ -416,6 +422,7 @@ namespace adventure_game
                     blueScene = 9;
                     yellowScene = 99;
                     greenScene = 99;
+                    imageBox.BackgroundImage = Properties.Resources.bedroom;
                     break;
                 case 22:
                     outputLabel.Text = "You feed the fish. You remember your mom telling you about throwing a coin into a well and making a wish. The aquarium's not quite a well, but oh well... \nDo you make a wish and toss the coin into the water?";
@@ -427,6 +434,7 @@ namespace adventure_game
                     blueScene = 13;
                     yellowScene = 99;
                     greenScene = 99;
+                    imageBox.BackgroundImage = Properties.Resources.fishtank;
                     break;
                 case 23:
                     outputLabel.Text = "You don't feed the fish. You remember your mom telling you about throwing a coin into a well and making a wish. The aquarium's not quite a well, but oh well... \nDo you make a wish and toss the coin into the water?";
@@ -438,6 +446,7 @@ namespace adventure_game
                     blueScene = 13;
                     yellowScene = 99;
                     greenScene = 99;
+                    imageBox.BackgroundImage = Properties.Resources.fishtank;
                     break;
                 case 24:
                     outputLabel.Text = "You feed the fish.\nWhat do you investigate next?";
@@ -449,6 +458,7 @@ namespace adventure_game
                     blueScene = 9;
                     yellowScene = 99;
                     greenScene = 99;
+                    imageBox.BackgroundImage = Properties.Resources.bedroom;
                     break;
                 case 25:
                     outputLabel.Text = "You don't lift up the floorboard.\nWhat do you investigate next?";
