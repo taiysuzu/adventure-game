@@ -140,5 +140,20 @@
   <ItemGroup>
     <None Include="Resources\gameover.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door slam.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\creepy.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explosion.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explosion.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wilhelm scream.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

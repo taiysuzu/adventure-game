@@ -148,10 +148,9 @@
             // 
             this.imageBox.BackColor = System.Drawing.Color.Black;
             this.imageBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.imageBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.imageBox.Location = new System.Drawing.Point(83, 104);
+            this.imageBox.Location = new System.Drawing.Point(13, 104);
             this.imageBox.Name = "imageBox";
-            this.imageBox.Size = new System.Drawing.Size(288, 168);
+            this.imageBox.Size = new System.Drawing.Size(428, 205);
             this.imageBox.TabIndex = 10;
             this.imageBox.TabStop = false;
             // 

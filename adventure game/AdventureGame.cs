@@ -28,6 +28,11 @@ namespace adventure_game
         int number = 0;
         //random number generator
         Random randGen = new Random();
+        //sound players
+        SoundPlayer slam = new SoundPlayer(Properties.Resources.door_slam);
+        SoundPlayer spook = new SoundPlayer(Properties.Resources.creepy);
+        SoundPlayer boom = new SoundPlayer(Properties.Resources.explosion);
+        SoundPlayer wilhelm = new SoundPlayer(Properties.Resources.wilhelm_scream);
 
         public AdventureGame()
         {
@@ -133,6 +138,7 @@ namespace adventure_game
                     yellowScene = 99;
                     greenScene = 99;
                     imageBox.BackgroundImage = Properties.Resources.hallway_figures;
+                    spook.Play();
                     break;
                 case 4:
                     outputLabel.Text = "You run back to the room you came out of and slam the door behind you.\n(Continue)";
@@ -146,6 +152,7 @@ namespace adventure_game
                     yellowScene = 99;
                     greenScene = 99;
                     imageBox.BackgroundImage = Properties.Resources.bedroom;
+                    slam.Play(); 
                     break;
                 case 5:
                     outputLabel.Text = "You decide to stand your ground. The figures look less and less solid as they approach. In a few seconds, you are enveloped by the shadows and lose consciousness.\n(Continue)";
@@ -170,6 +177,7 @@ namespace adventure_game
                     yellowScene = 99;
                     greenScene = 99;
                     imageBox.BackgroundImage = Properties.Resources.rip1;
+                    wilhelm.Play();
                     break;
                 case 7:
                     outputLabel.Text = "You examine the lamp, which seems to be floating of its own accord.\nPlug the lamp in?";
@@ -190,7 +198,7 @@ namespace adventure_game
                     yellowLabel.Text = "";
                     greenLabel.Text = "";
                     imageBox.BackgroundImage = Properties.Resources.fishtank;
-                    if (doorSlam == 1)
+                    if (doorSlam == 1) //check for door slam
                     {
                         if (goldCoin == 1)
                         {
@@ -199,7 +207,7 @@ namespace adventure_game
                             yellowScene = 99;
                             greenScene = 99;
                         }
-                        if (goldCoin == 0)
+                        if (goldCoin == 0) //check for coin
                         {
                             redScene = 12;
                             blueScene = 21;
@@ -270,6 +278,8 @@ namespace adventure_game
                     yellowScene = 99;
                     greenScene = 99;
                     imageBox.BackgroundImage = Properties.Resources.rip1;
+                    wilhelm.Play();
+                    boom.Play();
                     break;
                 case 11:
                     outputLabel.Text = "You decide to leave the lamp as it is.\nWhat do you investigate next?";
@@ -293,6 +303,7 @@ namespace adventure_game
                     blueScene = 99;
                     yellowScene = 99;
                     greenScene = 99;
+                    wilhelm.Play();
                     imageBox.BackgroundImage = Properties.Resources.rip1;
                     break;
                 case 13:
@@ -317,6 +328,7 @@ namespace adventure_game
                     blueScene = 99;
                     yellowScene = 99;
                     greenScene = 99;
+                    wilhelm.Play();
                     imageBox.BackgroundImage = Properties.Resources.rip1;
                     break;
                 case 15:
@@ -372,6 +384,7 @@ namespace adventure_game
                     blueScene = 99;
                     yellowScene = 99;
                     greenScene = 99;
+                    wilhelm.Play();
                     imageBox.BackgroundImage = Properties.Resources.rip1;
                     break;
                 case 18:
